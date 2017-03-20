@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    .imgs{
+        display: inline-block;
+        float: left;
+       margin: 40px  100px auto;
+    }
+    ul{
+        list-style: none;
+//      height: 90px;
+ 
+//      float:right;
+//      display: inline;
+        margin: 0 150px auto;
+        a{
+            text-decoration: none;
+            color: black;
+             padding-top:10px ;
+             padding-bottom: 20px;
+        }
+        a:hover{
+            border-bottom: 3px solid #FE5454;
+            padding-top:10px ;
+             padding-bottom: 20px;
+        }
+        li{
+            display: block;
+            float: left;
+            line-height: 90px;
+            padding: 10px;
+           
+            .nav1{
+                border-bottom: 3px solid #FE5B56;
+            }
+        }
+    }
+}
+.mycarousel{
+    margin: 50px 0 0 0;
+    position: relative;
+    display: block;
+    .carousel-inner{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .active{
+            display: block;
+            color: #FFFFFF;
+            background: #FF000E;
+            img{
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+            #onebanner_FO{
+                display: block;
+                width: 190px;
+                height: 60px;
+                border-radius: 10px;
+                background: #FF000E;
+                position: absolute;
+                top: 58%;
+                right: 22%;
+                font-size: 20px;
+                text-align: center;
+                line-height: 60px;
+                color: #fff;
+                z-index: 9;
+            }
+            .index_FO{
+                margin-top: 30px;
+                display: inline-block;
+                width: 190px;
+                height: 60px;
+                border-radius: 10px;
+                background: #FF000E;
+                font-size: 20px;
+                text-align: center;
+                line-height: 60px;
+                color: #fff;
+            }
+        }
+    }
+    #rightmenu1{
+        position: fixed;
+        top: 220px;
+        right: 120px;
+        width: 60px;
+        height: 60px;
+        background: url(../img/wechatcode.png);
+        z-index: 99;
+    }
+    #banner_wechatcode{
+        display: none;
+        position: fixed;
+        top: 220px;
+        right: 190px;
+        width: 116px;
+        height: 110px;
+        background: url(../img/codepic.png);
+    }
+    .rightmenu2{
+        position: fixed;
+        top: 290px;
+        right: 120px;
+        width: 60px;
+        height: 60px;
+        background: url(../img/lineserver.png);
+        z-index: 99;
+    }
+    .rightmenu3{
+        position: fixed;
+        top: 360px;
+        right: 120px;
+        width: 60px;
+        height: 60px;
+        background: url(../img/backtop.png);
+        z-index: 99;
+    }
+}
+.subject_tab1{
+    .container{
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        p{
+            display: inline-block;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            color: #333;
+            margin: 0 0 10px;
+            span{
+                color: #FF000E;
+                font-size: 34px;
+            }
+        }
+        .row{
+            margin-right: -15px;
+            margin-left: -15px;
+            .col-md-4{
+                width: 33.33%;
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .col-sm-4{
+                width: 33.33%;
+                float: left;
+                .media:first-child{
+                    margin-top: 0;
+                    overflow: hidden;
+                    zoom: 1;
+                    .media-left{
+                        display: table-cell;
+                        vertical-align: top;
+                        padding-right: 10px;
+                    }
+                }
+            .col-md-12{
+                width: 100%;
+                float: left;
+            }
+            .col-sm-12{
+                width: 100%;
+                float: left;
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+                .index_FO{
+                    margin-top: 30px;
+                    display: inline-block;
+                    width: 190px;
+                    height: 60px;
+                    border-radius: 10px;
+                    background: #FF000E;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 60px;
+                    color: #fff;
+                }
+            }
+            }
+        }
+    }
+}

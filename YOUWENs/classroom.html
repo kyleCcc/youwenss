@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/classroom.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top fl">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand logo">
+						<span style="color: #FF000E;line-height: 90px;">YOUWEN优问</span>
+					</a>
+					<button type="button" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="teaching.html">教学理念</a>
+						</li>
+						<li>
+							<a href="Tutorial.html">课程体系</a>
+						</li>
+						<li>
+							<a href="faculty.html">师资力量</a>
+						</li>
+						<li>
+							<a href="learning.html">学习流程</a>
+						</li>
+						<li>
+							<a href="classroom.html">优问课堂</a>
+						</li>
+						<li>
+							<a href="face.html">学习一对一</a>
+						</li>
+						<li>
+							<p>电话：400-777-5029</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active" style="background: #fff;">
+					<img src="img/class/abcdefg.png"/>	
+				</div>
+			</div>
+			<div id="rightmenu1"></div>
+			<div id="banner_wechatcode"></div>
+			<div class="rightmenu2"></div>
+			<div class="rightmenu3" onclick="goBack()"></div>
+			<div style="width: 100%; height: 850px;">
+				<div class="row class_row" style="padding-left: 15px; padding-right: 15px;">
+					<div class="col col-md-2 col-sm-2">
+						<ul class="left_menu left_menu-pills left_menu-stacked" role="tablist">
+							<li>
+								<a href="javascript:;">热门推荐</a>
+							</li>
+							<li>
+								<a href="javascript:;">优问咨询</a>
+							</li>
+							<li>
+								<a href="javascript:;">学生课堂</a>
+							</li>
+							<li>
+								<a href="javascript:;">家长课堂</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col-md-6 col-sm-6">
+						<div class="class_midnews">
+							<div>
+								<img src="img/class/news1.png"/>
+								<p>怎样才能更好的教育孩子</p>
+								<span>时代光华教师大概是觉得就是的故事就是大哥介绍给大家
+								给大家说过僵尸国度就是大哥教师大概就是打个就是大哥就是
+								大哥收到收到收到
+							</span>
+								<time>2016-12-02</time>
+							</div>
+						</div>
+						<nav>
+							<ul class="pagination class_page">
+								<li style="float: left;">
+									<a href="#">上一页</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li style="margin-right: 10px;">
+									<a href="#">下一页</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col col-md-4 col-sm-4 right_news">
+						<p>热门文章</p>
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="tab5 fl">
+				<form action="" method="post" name="botform" onSubmit="return botCheck()" id="form1">				
+				<p>
+					<input type="text" id="botname" placeholder="姓名" onblur="botusername()" autocomplete="off" />
+				</p>					
+				<p>
+					<input type="text" id="botphone" placeholder="手机号码" onblur="botphone()" autocomplete="off" />
+				</p>
+				<p>
+					<input type="text" id="botemail" placeholder="电子邮箱" onblur="botemail()" autocomplete="off" />
+				</p>
+				
+				<select id="stage" name="stage"></select>
+				<select id="grade" name="grade"></select>
+				<select id="subject" name="subject"></select>
+				
+				<input type="submit" id="submit" value="0元免费试听" />
+			</form>
+
+			</div>
+			<div class="youwencopy">
+				Copyright © 上海优问教育科技有限公司
+
+			</div>
+			<div id="mask"></div>
+			<div id="mtk">
+				<div id="mtk1" class="fl">
+				<span>超小组</span>
+				<span>分层次</span>
+				<span>强互动</span>
+				<p>全流程强化中小学生学习动力</p>
+				<div id="mtk_img">
+					<img src="img/mtk_boy.png" />
+				</div>
+			</div>
+			<div id="line" class="fl"></div>
+			<div id="mtk2" class="fl">
+				<div id="close_freeorder"></div>
+				<form action="<%=basePath%>manager/customer/save" id="form2"
+					  method="post" name="form" onSubmit="return myCheck()">
+					<p>
+						<input type="text" id="name" class="name" placeholder="姓名" onblur="username()" autocomplete="off"/>
+						<span id="span1"></span>
+					</p>
+					<p>
+						<input type="text" id="num" class="num" placeholder="手机号" onblur="phone()" autocomplete="off"/>
+						<span id="span2"></span>
+					</p>
+					<p>
+						<input type="text" id="email" class="email" placeholder="邮箱" onblur="myemail()" autocomplete="off"/>
+						<span id="span3"></span>
+					</p>
+					<select id="stage" name="stage" style="margin-left: 30px;"></select>
+					<select id="grade" name="grade"></select>
+					<select id="subject" name="subject"></select>
+					
+					<p><input type="submit" id="submit2" value="预约免费体验" /></p>
+				</form>
+			</div>
+
+			</div>
+			
+		</div>
+	</body>
+	<script src="js/publics.js"></script>
+	<script src="js/lds.js"></script>
+	<script type="text/javascript">
+			_init_area();
+			new WOW().init();
+	</script>
+</html>
